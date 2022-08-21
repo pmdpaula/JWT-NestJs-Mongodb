@@ -1,5 +1,8 @@
 ## Description
 
+
+[Fábrica do Código Playlist NestJs](https://youtube.com/playlist?list=PLryJIoSncQyNzHHbHMPQkjPRP3Kv0ICnq)
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)

@@ -11,7 +11,7 @@ dotenv.config();
 @Module({
   imports: [
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.ae5wj.mongodb.net/?authSource=${process.env.MONGODB_DATABASE}&retryWrites=true&w=majority`,
+      `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.ae5wj.mongodb.net/axbauthtemplate?retryWrites=true&w=majority`,
     ),
     TasksModule,
   ],
