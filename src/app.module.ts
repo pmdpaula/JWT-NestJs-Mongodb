@@ -1,3 +1,4 @@
+import { AuthModule } from './auth/auth.module';
 import * as dotenv from 'dotenv';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
@@ -14,6 +15,7 @@ dotenv.config();
     MongooseModule.forRoot(
       `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.ae5wj.mongodb.net/axbauthtemplate?retryWrites=true&w=majority`,
     ),
+    AuthModule,
     TasksModule,
     UsersModule,
   ],

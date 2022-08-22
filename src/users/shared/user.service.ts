@@ -4,7 +4,7 @@ import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
-export class UserService {
+export class UsersService {
   constructor(@InjectModel('User') private readonly userModel: Model<User>) {}
 
   async getAll() {
@@ -13,6 +13,10 @@ export class UserService {
 
   async getById(id: string) {
     return await this.userModel.findById(id).exec();
+  }
+
+  async getByEmail(email: string) {
+    return await this.userModel.findOne({ email }).exec();
   }
 
   async create(user: User) {
